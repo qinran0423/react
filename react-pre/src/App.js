@@ -6,7 +6,8 @@ import './App.css';
 // import ReactReduxPage from './pages/ReactReduxPage';
 // import ReactRoutePage from './pages/ReactRoutePage';
 // import PureComponentPage from './pages/PureComponentPage';
-import LifecyclesPage from './pages/LifecyclesPage';
+// import LifecyclesPage from './pages/LifecyclesPage';
+import HookPage from './pages/HookPage';
 // import UserPage from './pages/UserPage';
 // import ClassComponent from './pages/ClassComponent';
 // import SetStatePage from './pages/SetStatePage';
@@ -37,7 +38,8 @@ function App() {
       {/* <ReactReduxPage/> */}
       {/* <ReactRoutePage/> */}
       {/* <PureComponentPage/> */}
-      <LifecyclesPage/>
+      {/* <LifecyclesPage/> */}
+      <HookPage/>
     </div>
   );
 }

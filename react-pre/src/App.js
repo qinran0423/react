@@ -7,7 +7,9 @@ import './App.css';
 // import ReactRoutePage from './pages/ReactRoutePage';
 // import PureComponentPage from './pages/PureComponentPage';
 // import LifecyclesPage from './pages/LifecyclesPage';
-import HookPage from './pages/HookPage';
+// import HookPage from './pages/HookPage';
+// import { UseMemoPage } from './pages/UseMemoPage';
+import { UseCallbackPage } from './pages/UseCallbackPage';
 // import UserPage from './pages/UserPage';
 // import ClassComponent from './pages/ClassComponent';
 // import SetStatePage from './pages/SetStatePage';
@@ -39,7 +41,9 @@ function App() {
       {/* <ReactRoutePage/> */}
       {/* <PureComponentPage/> */}
       {/* <LifecyclesPage/> */}
-      <HookPage/>
+      {/* <HookPage/> */}
+      {/* <UseMemoPage/> */}
+      <UseCallbackPage/>
     </div>
   );
 }

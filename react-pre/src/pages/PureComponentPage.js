@@ -1,5 +1,4 @@
 import React, {  PureComponent } from 'react'
-
 export default class PureComponentPage extends PureComponent {
   constructor(props) {
     super(props)

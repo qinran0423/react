@@ -1,8 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-import ClassComponent from './pages/ClassComponent';
-import { FunctionComponent } from './pages/FunctionComponent';
+// import HomePage from './pages/HomePage';
+// import ReduxPage from './pages/ReduxPage';
+// import ReactReduxPage from './pages/ReactReduxPage';
+// import ReactRoutePage from './pages/ReactRoutePage';
+// import PureComponentPage from './pages/PureComponentPage';
+import LifecyclesPage from './pages/LifecyclesPage';
+// import UserPage from './pages/UserPage';
+// import ClassComponent from './pages/ClassComponent';
+// import SetStatePage from './pages/SetStatePage';
+// import { FunctionComponent } from './pages/FunctionComponent';
 function App() {
   return (
     <div className="App">
@@ -21,7 +29,15 @@ function App() {
         </a>
       </header> */}
       {/* <ClassComponent/> */}
-      <FunctionComponent/>
+      {/* <FunctionComponent name="randy"/> */}
+      {/* <SetStatePage/> */}
+      {/* <HomePage/> */}
+      {/* <UserPage/> */}
+      {/* <ReduxPage/> */}
+      {/* <ReactReduxPage/> */}
+      {/* <ReactRoutePage/> */}
+      {/* <PureComponentPage/> */}
+      <LifecyclesPage/>
     </div>
   );
 }

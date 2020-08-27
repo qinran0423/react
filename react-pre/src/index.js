@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 // import './index.css';
-import style from './index.module.css';
+// import style from './index.module.css';
 import App from './App';
-import logo from './logo192.png';
-import * as serviceWorker from './serviceWorker';
+// import logo from './logo192.png';
+// import * as serviceWorker from './serviceWorker';
 
 // const name = "React"
 // const obj = {
@@ -34,9 +34,11 @@ import * as serviceWorker from './serviceWorker';
 //   </div>
 // )
 
+import store from './store/index'
+import { Provider } from 'react-redux'
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider store={store}>
     <App />
-  </React.StrictMode>,
+  </Provider>,
   document.getElementById('root')
 );

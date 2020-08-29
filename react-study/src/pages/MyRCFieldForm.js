@@ -8,6 +8,8 @@ const passworRules = {required: true, message: "请输入密码！"};
 
 
 export default function MyRCFieldForm(props) {
+	// 什么时候我会⽤ Hook？ 如果你在编写函数组件并意识到需要向其添加⼀些 state，以前的做法是必须将其它转化为 class。现在你可以在现有的函数组件中使⽤ Hook。
+	// 自定义hook
 	const [form] = Form.useForm();
 
 

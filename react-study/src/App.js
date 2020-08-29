@@ -2,14 +2,17 @@ import React from 'react';
 import './App.css'
 // import ContextPage from './pages/ContextPage';
 // import HocPage from './pages/HocPage';
-import ReduxPage from './pages/ReduxPage';
+// import AntdFormPage from './pages/AntdFormPage';
+import MyRCFieldForm from './pages/MyRCFieldForm';
 
 function App() {
   return (
     <div className="App">
       {/* <ContextPage/> */}
       {/* <HocPage/> */}
-      <ReduxPage/>
+      {/* <ReduxPage/> */}
+      {/* <AntdFormPage/> */}
+      <MyRCFieldForm/>
     </div>
   );
 }

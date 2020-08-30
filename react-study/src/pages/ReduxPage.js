@@ -30,7 +30,7 @@ export default class ReduxPage extends Component {
     return (
       <div>
         <h3>ReduxPage</h3>
-        <p>{store.getState().home}</p>
+        <p>{store.getState()}</p>
         <button onClick={this.add}>add</button>
         <button onClick={this.asyadd}>asyadd</button>
       </div>

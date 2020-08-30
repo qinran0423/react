@@ -1,5 +1,9 @@
+
+// createStore(counterReducer, applyMiddleware(thunk, logger))
 export default function createStore(reducer, enhancer) {
+  
   if(enhancer) {
+    console.log(enhancer)
     // 增强createStore的dispatch
     return enhancer(createStore)(reducer)
   }
@@ -34,7 +38,4 @@ export default function createStore(reducer, enhancer) {
     dispatch,
     subscribe
   }
-
-
-
 }

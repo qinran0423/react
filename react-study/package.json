@@ -12,6 +12,7 @@
     "less": "^3.12.2",
     "less-loader": "^7.0.0",
     "rc-field-form": "^1.10.1",
+    "rc-form": "^2.4.11",
     "react": "^16.13.1",
     "react-app-rewired": "^2.1.6",
     "react-dom": "^16.13.1",

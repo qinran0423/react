@@ -5,7 +5,8 @@ import './App.css'
 // import AntdFormPage from './pages/AntdFormPage';
 // import MyRCFieldForm from './pages/MyRCFieldForm';
 // import MyRCForm from './pages/MyRCForm';
-import ReduxPage from './pages/ReduxPage';
+// import ReduxPage from './pages/ReduxPage';
+import ReactReduxPage from './pages/ReactReduxPage';
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
       {/* <AntdFormPage/> */}
       {/* <MyRCFieldForm/> */}
       {/* <MyRCForm/> */}
-      <ReduxPage/>
+      {/* <ReduxPage/> */}
+      <ReactReduxPage/>
     </div>
   );
 }

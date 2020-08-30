@@ -1,8 +1,11 @@
 import React from 'react';
 import FieldContext from './FieldContext'
+import useForm from './useForm';
 
-export default function Form({ children , form, onFinish, onFinishFailed}) {
-  form.setCallback({
+export default function Form({ children , form, onFinish, onFinishFailed}, ref) {
+  const [fromInstance] = useForm(form)
+  React.useImperativeHandle(ref, () => fromInstance)
+  fromInstance.setCallback({
     onFinish,
     onFinishFailed
   })
@@ -11,9 +14,9 @@ export default function Form({ children , form, onFinish, onFinishFailed}) {
     <form
       onSubmit={event => {
         event.preventDefault()
-        form.submit()
+        fromInstance.submit()
       }}>
-        <FieldContext.Provider value={form}>
+        <FieldContext.Provider value={fromInstance}>
         {children}
         </FieldContext.Provider>
     </form>

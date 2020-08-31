@@ -5,19 +5,19 @@ import './App.css'
 // import AntdFormPage from './pages/AntdFormPage';
 // import MyRCFieldForm from './pages/MyRCFieldForm';
 // import MyRCForm from './pages/MyRCForm';
-// import ReduxPage from './pages/ReduxPage';
-import ReactReduxPage from './pages/ReactReduxPage';
+import ReduxPage from './pages/ReduxPage';
+// import ReactReduxPage from './pages/ReactReduxPage';
 
 function App() {
   return (
     <div className="App">
       {/* <ContextPage/> */}
       {/* <HocPage/> */}
-      {/* <AntdFormPage/> */}
+      {/* <AntdFormPage/
       {/* <MyRCFieldForm/> */}
       {/* <MyRCForm/> */}
-      {/* <ReduxPage/> */}
-      <ReactReduxPage/>
+      <ReduxPage/>
+      {/* <ReactReduxPage/> */}
     </div>
   );
 }

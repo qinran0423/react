@@ -3,15 +3,15 @@
 export default function createStore(reducer, enhancer) {
   
   if(enhancer) {
-    console.log(enhancer)
     // 增强createStore的dispatch
+    console.log(enhancer(createStore)(reducer))
+
+    // applyMiddleware(thunk, logger)(createStore)(reducer)
     return enhancer(createStore)(reducer)
   }
 
   let currentState;
   let currentListeners = [];
-
-
 
   function getState() {
     return currentState;

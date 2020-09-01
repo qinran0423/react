@@ -1,7 +1,7 @@
-import {createStore, applyMiddleware} from 'redux';
+import {createStore, applyMiddleware, combineReducers} from 'redux';
 import thunk from 'redux-thunk';
 import logger from 'redux-logger'
-import combineReducers from '../qredux/combineReducers'
+// import combineReducers from '../qredux/combineReducers'
 
 // import {createStore, applyMiddleware} from '../qredux/'
 

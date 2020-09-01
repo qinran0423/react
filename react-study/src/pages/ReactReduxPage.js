@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 
 import { connect} from 'react-redux'
 
-// import {bindActionCreators} from "redux";
-import {bindActionCreators} from '../qReactRedux'
+import {bindActionCreators} from "redux";
+// import {bindActionCreators} from '../qReactRedux'
 @connect(
   // mapStateToProps 把state放到props上一份
   state => {

@@ -1,3 +1,13 @@
+import React from 'react'
+
+const Context = React.createContext()
+
+export function Provider({store, children}) {
+  console.log('store', store, children, Context); //sy-log
+  return <Context.Provider value={store}>{children}</Context.Provider>;
+}
+
+
 function bindActionCreator(creator, dispatch) {
   console.log(creator())
 

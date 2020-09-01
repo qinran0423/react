@@ -1,9 +1,9 @@
-// import {createStore, applyMiddleware} from 'redux';
+import {createStore, applyMiddleware} from 'redux';
 import thunk from 'redux-thunk';
 import logger from 'redux-logger'
 import combineReducers from '../qredux/combineReducers'
 
-import {createStore, applyMiddleware} from '../qredux/'
+// import {createStore, applyMiddleware} from '../qredux/'
 
 const counterReducer = (state = 0, {type, preloay = 1}) => {
   switch (type) {
@@ -18,6 +18,5 @@ const counterReducer = (state = 0, {type, preloay = 1}) => {
 
 const store = createStore(combineReducers({count: counterReducer}), applyMiddleware(thunk, logger));
 
-console.log(store)
 
 export default store;

@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 
 import { connect} from 'react-redux'
 
-import {bindActionCreators} from "redux";
+// import {bindActionCreators} from "redux";
+import {bindActionCreators} from '../qReactRedux'
 @connect(
   // mapStateToProps 把state放到props上一份
   state => {
@@ -14,7 +15,7 @@ import {bindActionCreators} from "redux";
   // }
   dispatch => {
     let creators = {
-      add: () => ({type: 'ADD'}),
+      add: () => ({type: 'ADD', preloay: 100}),
       minus: () => ({type: 'MINUS'})
     }
 
@@ -24,8 +25,12 @@ import {bindActionCreators} from "redux";
   }
 )
 class ReactReduxPage extends Component {
+
+
+
   render() {
     console.log(this.props)
+    
     const {count, dispatch, add, minus} = this.props
     return (
       <div>
